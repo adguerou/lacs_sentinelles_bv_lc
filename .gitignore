@@ -6,3 +6,4 @@
 *.copc.laz
 data/*/dem/
 *TA_diff_pkk_lidarhd_classe*
+data/*/bv/acc_1m/*.tif
