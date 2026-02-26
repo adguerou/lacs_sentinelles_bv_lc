@@ -5,4 +5,4 @@
 *__pycache__/
 *.copc.laz
 data/*/dem/
-
+*TA_diff_pkk_lidarhd_classe*
