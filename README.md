@@ -53,7 +53,7 @@ L'analyse se fait à partir des notebooks situés dans le dossier "analysis". De
 
 Les notebooks **01_main_ls_bc_lc. ipynb** et **02_extra_bv_lc font.ipynb** font typiquement la même chose, simplement sur des listes de lacs différents, et dans un contexte de nouveau lac à rajouter à une liste déjà existante pour le notebook 02. C'est donc ce notebook, **02_extra_bv_lc font.ipynb**, qu'il faudra utiliser pour de potentiel futur lacs. 
 
-Le notebook **xx_lc_guerou_et_al_2026.ipynb** est là pour illustrer comment l'occupation du sol à été calculé. Il n'est pas reproductible tel quel. C'est pourquoi **les données d'occupation du sol ont été extraite** et mis à disposition sur toute la zone alpine, pyrénéennes et corse (voir section ci dessous).
+Le notebook **xx_lc_guerou_et_al_2026.ipynb** est là pour illustrer comment l'occupation du sol à été calculé. Il n'est pas reproductible tel quel. C'est pourquoi **les données d'occupation du sol ont été extraites** et mis à disposition sur toute la zone alpine, pyrénéennes et corse (voir section ci dessous).
 
 Ces notebooks **01** et **02** comportent 4 sections:
   1. Creation des MNTs
@@ -62,10 +62,10 @@ Ces notebooks **01** et **02** comportent 4 sections:
   4. Creátion du fichier de statistiques et des figures
 
 ### Les MNTs
-Les MNTs du lidar HD n'étaient pas disponible début 2024 lors des premiers travaux. Un travail préliminaire était donc nécessaire (section 1) mais à l'heure actuelle cette étape peut être évitée (longue et technique) en sautant les section $1.3 et $1.4.4 (du notebook 02), en ayant téléchargé les dalles MNT directement sur le site IGN auparavant [téléchargement ici](https://cartes.gouv.fr/telechargement/IGNF_MNT-LIDAR-HD).
+Les MNTs du lidar HD n'étaient pas disponible début 2024 lors des premiers travaux. Un travail préliminaire était donc nécessaire (section 1) mais à l'heure actuelle cette étape peut être évitée (longue et technique) en sautant les sections $1.3 et $1.4.4 (du notebook 02), et en ayant téléchargé auparavant les dalles MNT directement sur le site IGN [téléchargement ici](https://cartes.gouv.fr/telechargement/IGNF_MNT-LIDAR-HD).
 
 ### Les bassins versants
-Le code qui réalise cette opération est basé sur le module python [pysheds](https://github.com/pysheds/pysheds?tab=readme-ov-file) et suit les mêmes étapes. Le traitement du "flattening" des lacs ainsi que la gestion de plusieurs bassins versants a été automatisé du mieux possible. Certaines manips comme la définition des éxutoires ("outlet") reste cependant manuelle sous QGIS (car également plus simple à visualiser).
+Le code qui réalise cette opération est basé sur le module python [pysheds](https://github.com/pysheds/pysheds?tab=readme-ov-file) et suit les mêmes étapes. Le traitement du "flattening" des lacs ainsi que la gestion de plusieurs bassins versants en simultané a été automatisé du mieux possible. Certaines manips comme la définition des éxutoires ("outlet") reste cependant manuelle sous QGIS (car également plus simple à visualiser).
 
 ### Création des produits
 Le dossier **delivery/** est créé dans la section $3 du notebook et contient les choses suivantes: 
